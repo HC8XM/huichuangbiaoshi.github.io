@@ -84,10 +84,12 @@
             width: 180px;
             height: 180px;
             background-image: url('LOGO.jpg');
-            background-size: contain;
+            background-size: 160% auto;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center top;
             margin-bottom: 20px;
+            mix-blend-mode: screen;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
         }
 
         .banner h1 {
@@ -100,7 +102,7 @@
             margin-bottom: 30px;
         }
 
-        .banner button {
+        .banner a {
             padding: 14px 35px;
             border: none;
             border-radius: 50px;
@@ -109,6 +111,7 @@
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .services {
@@ -207,7 +210,7 @@
     <div class="banner-logo"></div>
     <h1>辉创标识 · 精工定制</h1>
     <p>专注标识设计、制作、安装一站式服务</p >
-    <button>立即咨询</button>
+    <a href="tel:15710672058">立即咨询</a >
 </section>
 
 <section class="services" id="service">
