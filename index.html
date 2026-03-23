@@ -88,9 +88,10 @@
             background-repeat: no-repeat;
             background-position: center;
             margin-bottom: 20px;
-            /* 关键：彻底去除白底，完美融合 */
-            mix-blend-mode: screen;
-            filter: brightness(2) contrast(1.5);
+            /* 关键：高级融合，不模糊、不发白 */
+            mix-blend-mode: normal;
+            background-color: transparent;
+            border-radius: 12px;
         }
 
         .banner h1 {
@@ -210,7 +211,7 @@
 <section class="banner" id="home">
     <div class="banner-logo"></div>
     <h1>辉创标识 · 精工定制</h1>
-    <p>专注标识设计、制作、安装一站式服务 · 工厂直供，价格更低</p >
+    <p>专注标识设计、制作、安装一站式服务、工厂直供、价格更低</p >
     <a href="tel:15710672058">立即咨询</a >
 </section>
 
