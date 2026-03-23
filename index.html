@@ -17,7 +17,6 @@
             color: #333;
         }
 
-        /* 导航栏 */
         header {
             background: #fff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -35,7 +34,22 @@
             padding: 15px 20px;
         }
 
-        .logo {
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://p.669pic.com/element_origin_min_pic/25/02/27/1466c22211041155110411551104115511041155.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .logo-text {
             font-size: 24px;
             font-weight: bold;
             background: linear-gradient(135deg, #165DFF, #7B2FFD);
@@ -54,7 +68,6 @@
             color: #165DFF;
         }
 
-        /* 首屏 */
         .banner {
             height: 500px;
             background: linear-gradient(135deg, #165DFF, #7B2FFD);
@@ -87,7 +100,6 @@
             cursor: pointer;
         }
 
-        /* 服务板块 */
         .services {
             max-width: 1200px;
             margin: 60px auto;
@@ -120,7 +132,6 @@
             color: #165DFF;
         }
 
-        /* 案例 */
         .cases {
             max-width: 1200px;
             margin: 60px auto;
@@ -140,7 +151,6 @@
             overflow: hidden;
         }
 
-        /* 联系我们 */
         .contact {
             background: #fff;
             padding: 60px 20px;
@@ -152,7 +162,6 @@
             margin-bottom: 10px;
         }
 
-        /* 底部 */
         footer {
             background: #222;
             color: #fff;
@@ -165,7 +174,10 @@
 
 <header>
     <div class="nav">
-        <div class="logo">辉创标识</div>
+        <div class="logo-area">
+            <div class="logo-img"></div>
+            <div class="logo-text">辉创标识</div>
+        </div>
         <div class="nav-links">
             <a href=" ">首页</a >
             <a href="#service">服务</a >
